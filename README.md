@@ -22,11 +22,6 @@ For example:
 
 This command will execute `tree /` but will print a running tiger in the background of your terminal.
 
-## Known issues
-
-The terminal can stay hidden when the script is killed before the end. In order to make it visible again, type `tput cnorm`.
-
-
 ## Author
 
 Valentin Dewolf

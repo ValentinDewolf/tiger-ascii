@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 FRAMES[0]="frames/walk-01.txt"
 FRAMES[1]="frames/walk-02.txt"
@@ -68,7 +68,6 @@ do
             done
             LINE[$(($height - 1))]=${#line}
     fi
-    sleep 0.01
 
     i=$(($i + 1))
     count=$(($count + 1))
