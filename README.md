@@ -8,7 +8,7 @@
 
 ## Requirements
 
-You *will* need to have `bash` installed on your system. You *do not* need anything else.
+You **will** need to have `bash` installed on your system. You **do not** need anything else.
 
 ## How to use ?
 
