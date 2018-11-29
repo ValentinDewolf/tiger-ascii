@@ -4,18 +4,21 @@
 
 *Tiger Ascii* is a program that displays a running tiger in ascii art on your terminal behind the output of a given command.
 
+## Requirements
+
+You *will* need to have `bash` installed on your system. You *do not* need anything else.
+
 ## How to use ?
 
-In order to use *Tiger Ascii*, simply redirect any command to the `tiger-ascii.sh` script.
-You *will* need to have `bash` installed on your system.
+In order to use *Tiger Ascii*, simply launch the `tiger-ascii.sh` script with any command (and parameters) as argument.
 
 For example:
 
 ```
-> tree / | ./tiger-ascii.sh
+> ./tiger-ascii.sh tree /
 ```
 
-Making an alias for the script can be a good idea.
+This command will execute `tree /` but will print a running tiger in the background of your terminal.
 
 ## Known issues
 
