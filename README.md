@@ -4,6 +4,8 @@
 
 *Tiger Ascii* is a program that displays a running tiger in ascii art on your terminal behind the output of a given command.
 
+![TigerAscii Screenshot](/resources/screenshot.png)
+
 ## Requirements
 
 You *will* need to have `bash` installed on your system. You *do not* need anything else.
