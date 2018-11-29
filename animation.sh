@@ -17,7 +17,7 @@ function file_display ()
 {
     echo -ne "\033[s\033[0;0H"
     offset=2
-    echo -ne "\e[38;5;209m"
+    echo -ne "\033[38;5;209m"
     IFS=''
     line_number=0
     tput civis
@@ -41,7 +41,7 @@ function file_display ()
         line_number=$(($line_number + 1))
     done < $1
     tput cnorm
-    echo -ne "\e[0;m"
+    echo -ne "\033[0;m"
     echo -ne "\033[u"
 }
 
@@ -53,7 +53,7 @@ height=$(($height - 2))
 while read line
 do
     echo "$line"
-    line=$(echo $line | sed -r "s/\x1B\[[0-9]([0-9])?[;m]([0-9])?([0-9])?(;)?([0-9])?([0-9])?([0-9])?(m)?//g")
+    line=$(echo $line | sed -E "s/\x1B\[[0-9]([0-9])?[;m]([0-9])?([0-9])?(;)?([0-9])?([0-9])?([0-9])?(m)?//g")
 
     if [ $count -lt $height ]; then
 
