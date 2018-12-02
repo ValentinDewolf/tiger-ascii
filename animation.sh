@@ -1,15 +1,17 @@
 #!/bin/bash
 
-FRAMES[0]="frames/walk-01.txt"
-FRAMES[1]="frames/walk-02.txt"
-FRAMES[2]="frames/walk-03.txt"
-FRAMES[3]="frames/walk-04.txt"
-FRAMES[4]="frames/walk-05.txt"
-FRAMES[5]="frames/walk-06.txt"
-FRAMES[6]="frames/walk-07.txt"
-FRAMES[7]="frames/walk-08.txt"
-FRAMES[8]="frames/walk-09.txt"
-FRAMES[9]="frames/walk-10.txt"
+tigerdir=${0%/*}
+
+FRAMES[0]="$tigerdir/frames/walk-01.txt"
+FRAMES[1]="$tigerdir/frames/walk-02.txt"
+FRAMES[2]="$tigerdir/frames/walk-03.txt"
+FRAMES[3]="$tigerdir/frames/walk-04.txt"
+FRAMES[4]="$tigerdir/frames/walk-05.txt"
+FRAMES[5]="$tigerdir/frames/walk-06.txt"
+FRAMES[6]="$tigerdir/frames/walk-07.txt"
+FRAMES[7]="$tigerdir/frames/walk-08.txt"
+FRAMES[8]="$tigerdir/frames/walk-09.txt"
+FRAMES[9]="$tigerdir/frames/walk-10.txt"
 
 
 # Displays the content of a file with some left padding
